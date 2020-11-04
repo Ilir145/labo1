@@ -22,12 +22,7 @@ public class Participant {
         return id;
     }
 
-    public static void main(String[] args) {
-        Participant par = new Participant("pablo","escobar");
-        System.out.printf(par.getNom());
 
-
-    }
 
 
 }
