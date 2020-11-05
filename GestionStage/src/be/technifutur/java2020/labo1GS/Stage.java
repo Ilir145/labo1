@@ -29,6 +29,18 @@ public class Stage {
         return fin;
     }
 
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public void setDebut(LocalDateTime debut) {
+        this.debut = debut;
+    }
+
+    public void setFin(LocalDateTime fin) {
+        this.fin = fin;
+    }
+
     // A rendre nn modifiable
     public HashMap<String, Activite> getActivites() {
         return activites;
@@ -37,7 +49,7 @@ public class Stage {
     public boolean ajouteActivite(Activite activite){
         boolean verif = true;
         if(!activites.containsKey(activite.getNom())) {
-            if(activite.getDebut().isAfter(this.getDebut()) && activite.getFin().isBefore(this.getFin())){
+            if(activite.getDebut().isAfter(this.getDebut())){
                 this.activites.putIfAbsent(activite.getNom(), activite);
                 verif = true;
             }

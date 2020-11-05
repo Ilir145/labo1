@@ -5,16 +5,16 @@ import java.time.LocalDateTime;
 public class Activite {
     private String nom;
     private LocalDateTime debut;
-    private LocalDateTime fin;
+    private int duree;
 
     public Activite(){
         super();
     }
 
-    public Activite(String nom,LocalDateTime debut,LocalDateTime fin){
+    public Activite(String nom,LocalDateTime debut,int fin){
         this.nom = nom;
         this.debut = debut;
-        this.fin = fin;
+        this.duree = duree;
     }
 
     public String getNom() {
@@ -25,8 +25,8 @@ public class Activite {
         return debut;
     }
 
-    public LocalDateTime getFin() {
-        return fin;
+    public int getDuree() {
+        return duree;
     }
 
 

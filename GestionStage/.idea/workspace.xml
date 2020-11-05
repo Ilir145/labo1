@@ -19,15 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fa8bf48-a290-4101-9230-47416aad6a7f" name="Default Changelist" comment="Menu et encodage de stage">
-      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/ActiviteCtrl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/ActiviteVue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Menu.java" afterDir="false" />
+    <list default="true" id="7fa8bf48-a290-4101-9230-47416aad6a7f" name="Default Changelist" comment="Class menu,activite et réorganisation">
+      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/MenuModif.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/StageCtrlAjouteActivite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/StageCtrlModifNom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionStage/be/technifutur/java2020/labo1GS/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionStage/be/technifutur/java2020/labo1GS/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Activite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Activite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/ActiviteCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/ActiviteCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/ActiviteVue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/ActiviteVue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Factory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/MenuGeneral.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Stage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/StageCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/StageCtrlEncode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +43,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -126,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604505474795</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Class menu,activite et réorganisation">
+      <created>1604572580224</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604572580224</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,7 +159,8 @@
     <MESSAGE value="main" />
     <MESSAGE value="toutes class" />
     <MESSAGE value="Menu et encodage de stage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Menu et encodage de stage" />
+    <MESSAGE value="Class menu,activite et réorganisation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Class menu,activite et réorganisation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="42" key="#com.intellij.ide.util.MemberChooser" timestamp="1604499622035">
@@ -156,33 +171,37 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1604488770083" />
-    <state width="1237" height="104" key="GridCell.Tab.0.bottom" timestamp="1604506273474">
+    <state width="1237" height="207" key="GridCell.Tab.0.bottom" timestamp="1604591299286">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="104" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604506273474" />
-    <state width="1237" height="104" key="GridCell.Tab.0.center" timestamp="1604506273473">
+    <state width="1237" height="207" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604591299286" />
+    <state width="1237" height="207" key="GridCell.Tab.0.center" timestamp="1604591299286">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="104" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604506273473" />
-    <state width="1237" height="104" key="GridCell.Tab.0.left" timestamp="1604506273473">
+    <state width="1237" height="207" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604591299286" />
+    <state width="1237" height="207" key="GridCell.Tab.0.left" timestamp="1604591299286">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="104" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604506273473" />
-    <state width="1237" height="104" key="GridCell.Tab.0.right" timestamp="1604506273473">
+    <state width="1237" height="207" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604591299286" />
+    <state width="1237" height="207" key="GridCell.Tab.0.right" timestamp="1604591299286">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="104" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604506273473" />
+    <state width="1237" height="207" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604591299286" />
     <state x="121" y="0" key="SettingsEditor" timestamp="1604480891691">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1604480891691" />
-    <state x="207" y="138" key="Vcs.Push.Dialog.v2" timestamp="1604505497165">
+    <state x="207" y="138" key="Vcs.Push.Dialog.v2" timestamp="1604572610420">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="207" y="138" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604505497165" />
+    <state x="207" y="138" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604572610420" />
     <state x="334" y="356" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1604478450000">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="334" y="356" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.680@0.0.1280.680" timestamp="1604478450000" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1604579028113">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1604579028113" />
   </component>
 </project>

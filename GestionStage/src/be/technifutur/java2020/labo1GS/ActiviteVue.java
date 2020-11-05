@@ -12,14 +12,14 @@ public class ActiviteVue {
     public void afficheActivite(){
         System.out.println("Nom:" + this.activite.getNom());
         System.out.println("Date de debut :" + this.activite.getDebut());
-        System.out.println("Date de fin :" + this.activite.getFin());
+        System.out.println("Duree :" + this.activite.getDuree());
     }
 
 
     public  String saisirNom(){
         String saisie;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Entrez le nom du stage:");
+        System.out.println("Entrez le nom de l activité:");
         saisie = sc.next();
         return saisie;
     }
@@ -33,12 +33,12 @@ public class ActiviteVue {
 
     }
 
-    public String saisirDateTempsF(){
-        String saisie;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Entrez la date de fin (exemple : 2017-12-05T11:30:30) :");
-        saisie = sc.next();
-        return saisie;
 
+    public int saisirDuree() {
+        int saisie;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Entrez la duree :");
+        saisie = sc.nextInt();
+        return saisie;
     }
 }

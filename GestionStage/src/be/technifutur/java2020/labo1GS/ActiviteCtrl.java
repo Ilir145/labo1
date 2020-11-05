@@ -17,19 +17,21 @@ public class ActiviteCtrl {
         this.activite = activite;
     }
 
+    public Activite getActivite() {
+        return activite;
+    }
+
     public void encodeActivite(){
         Pattern patternDateTemps = Pattern.compile("([0-9][0-9][0-9][0-9])-([0-9][0-9])-([0-9][0-9])(T)([0-9][0-9]):([0-9][0-9]):([0-9][0-9])");
 
         String nom = vue.saisirNom();
         String debutS = vue.saisirDateTempsD();
-        String finS = vue.saisirDateTempsF();
+        int duree = vue.saisirDuree();
 
         Matcher matcherD = patternDateTemps.matcher(debutS);
-        Matcher matcherF = patternDateTemps.matcher(finS);
-        if(matcherD.matches() && matcherF.matches()){
+        if(matcherD.matches()){
             LocalDateTime debut = LocalDateTime.parse(debutS);
-            LocalDateTime fin = LocalDateTime.parse(finS);
-            this.activite = new Activite(nom,debut,fin);
+            this.activite = new Activite(nom,debut,duree);
         }
         else {
             System.out.println("Mauvais format d'encodage");
@@ -37,5 +39,6 @@ public class ActiviteCtrl {
 
 
     }
+
 
 }

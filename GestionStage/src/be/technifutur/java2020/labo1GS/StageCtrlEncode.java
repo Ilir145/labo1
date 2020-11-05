@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class StageCtrl {
+public class StageCtrlEncode {
     private Stages stages;
     private StageVue vue;
 
@@ -29,7 +29,11 @@ public class StageCtrl {
         if(matcherD.matches() && matcherF.matches()){
                 LocalDateTime debut = LocalDateTime.parse(debutS);
                 LocalDateTime fin = LocalDateTime.parse(finS);
-                this.stages.ajouteStage( new Stage(nom,debut,fin));
+                if(debut.isBefore(fin) && !debut.isEqual(fin)) {
+                    this.stages.ajouteStage(new Stage(nom, debut, fin));
+                    System.out.println("Le stage a bien été encoder");
+                }
+                else System.out.println("Dates invalide!!!!!");
         }
         else {
             System.out.println("Mauvais format d'encodage");
