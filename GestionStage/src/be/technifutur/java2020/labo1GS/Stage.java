@@ -37,8 +37,14 @@ public class Stage {
     public boolean ajouteActivite(Activite activite){
         boolean verif = true;
         if(!activites.containsKey(activite.getNom())) {
-            this.activites.putIfAbsent(activite.getNom(), activite);
-            verif = true;
+            if(activite.getDebut().isAfter(this.getDebut()) && activite.getFin().isBefore(this.getFin())){
+                this.activites.putIfAbsent(activite.getNom(), activite);
+                verif = true;
+            }
+            else {
+                System.out.println("La période n'est pas comprise dans la durée du stage");
+            }
+
         }
         return verif;
     }

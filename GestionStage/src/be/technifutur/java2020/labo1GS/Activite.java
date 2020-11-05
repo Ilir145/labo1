@@ -7,6 +7,16 @@ public class Activite {
     private LocalDateTime debut;
     private LocalDateTime fin;
 
+    public Activite(){
+        super();
+    }
+
+    public Activite(String nom,LocalDateTime debut,LocalDateTime fin){
+        this.nom = nom;
+        this.debut = debut;
+        this.fin = fin;
+    }
+
     public String getNom() {
         return nom;
     }
@@ -18,4 +28,6 @@ public class Activite {
     public LocalDateTime getFin() {
         return fin;
     }
+
+
 }
