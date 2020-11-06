@@ -19,21 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fa8bf48-a290-4101-9230-47416aad6a7f" name="Default Changelist" comment="Class menu,activite et réorganisation">
-      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/MenuModif.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/StageCtrlAjouteActivite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/StageCtrlModifNom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/User.java" afterDir="false" />
+    <list default="true" id="7fa8bf48-a290-4101-9230-47416aad6a7f" name="Default Changelist" comment="Ajout d'activite et factory2.0">
+      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/StgCtrlAffCollAct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionStage/be/technifutur/java2020/labo1GS/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionStage/be/technifutur/java2020/labo1GS/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Activite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Activite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/ActiviteCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/ActiviteCtrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/ActiviteVue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/ActiviteVue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Factory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/MenuGeneral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Stage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/StageCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/StageCtrlEncode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/MenuModif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/MenuModif.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/StageCtrlAjouteActivite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/StageCtrlAjouteActivite.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604572580224</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ajout d'activite et factory2.0">
+      <created>1604591990460</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604591990460</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,7 +159,8 @@
     <MESSAGE value="toutes class" />
     <MESSAGE value="Menu et encodage de stage" />
     <MESSAGE value="Class menu,activite et réorganisation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Class menu,activite et réorganisation" />
+    <MESSAGE value="Ajout d'activite et factory2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout d'activite et factory2.0" />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="42" key="#com.intellij.ide.util.MemberChooser" timestamp="1604499622035">
@@ -171,30 +171,30 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1604488770083" />
-    <state width="1237" height="207" key="GridCell.Tab.0.bottom" timestamp="1604591299286">
+    <state width="1237" height="207" key="GridCell.Tab.0.bottom" timestamp="1604652569976">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="207" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604591299286" />
-    <state width="1237" height="207" key="GridCell.Tab.0.center" timestamp="1604591299286">
+    <state width="1237" height="207" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604652569976" />
+    <state width="1237" height="207" key="GridCell.Tab.0.center" timestamp="1604652569976">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="207" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604591299286" />
-    <state width="1237" height="207" key="GridCell.Tab.0.left" timestamp="1604591299286">
+    <state width="1237" height="207" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604652569976" />
+    <state width="1237" height="207" key="GridCell.Tab.0.left" timestamp="1604652569975">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="207" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604591299286" />
-    <state width="1237" height="207" key="GridCell.Tab.0.right" timestamp="1604591299286">
+    <state width="1237" height="207" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604652569975" />
+    <state width="1237" height="207" key="GridCell.Tab.0.right" timestamp="1604652569976">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="207" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604591299286" />
+    <state width="1237" height="207" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604652569976" />
     <state x="121" y="0" key="SettingsEditor" timestamp="1604480891691">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1604480891691" />
-    <state x="207" y="138" key="Vcs.Push.Dialog.v2" timestamp="1604572610420">
+    <state x="207" y="138" key="Vcs.Push.Dialog.v2" timestamp="1604592004719">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="207" y="138" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604572610420" />
+    <state x="207" y="138" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604592004719" />
     <state x="334" y="356" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1604478450000">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

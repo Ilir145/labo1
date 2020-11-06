@@ -6,6 +6,11 @@ import java.util.Scanner;
 public class MenuModif {
     private StageCtrlModifNom ctrlModifNom;
     private StageCtrlAjouteActivite ctrlAjouteActivite;
+    private StgCtrlAffCollAct ctrlAffCollAct;
+
+    public void setCtrlAffCollAct(StgCtrlAffCollAct ctrlAffCollAct) {
+        this.ctrlAffCollAct = ctrlAffCollAct;
+    }
 
     public void setCtrlAjouteActivite(StageCtrlAjouteActivite ctrlAjouteActivite) {
         this.ctrlAjouteActivite = ctrlAjouteActivite;
@@ -20,13 +25,14 @@ public class MenuModif {
         String nom;
         Scanner sc = new Scanner(System.in);
 
-        while (choix != 5) {
+        while (choix != 6) {
             System.out.println("        Menu modif ");
             System.out.println("1)  Modif nom");
             System.out.println("2)  Modif date de debut");
             System.out.println("3)  Modif date de fin");
             System.out.println("4)  Ajouter une activité");
-            System.out.println("5)  Revenir au menu principal");
+            System.out.println("5)  Afficher les activites d un stage");
+            System.out.println("6)  Revenir au menu principal");
 
             choix = sc.nextInt();
             switch (choix) {
@@ -50,6 +56,9 @@ public class MenuModif {
                     ctrlAjouteActivite.ajouteActivite();
                     break;
                 case 5:
+                    ctrlAffCollAct.afficheACtivites();
+                    break;
+                case 6:
                     System.out.println("<-");
                     break;
                 default:

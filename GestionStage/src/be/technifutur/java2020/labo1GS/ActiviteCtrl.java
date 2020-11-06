@@ -23,7 +23,6 @@ public class ActiviteCtrl {
 
     public void encodeActivite(){
         Pattern patternDateTemps = Pattern.compile("([0-9][0-9][0-9][0-9])-([0-9][0-9])-([0-9][0-9])(T)([0-9][0-9]):([0-9][0-9]):([0-9][0-9])");
-
         String nom = vue.saisirNom();
         String debutS = vue.saisirDateTempsD();
         int duree = vue.saisirDuree();

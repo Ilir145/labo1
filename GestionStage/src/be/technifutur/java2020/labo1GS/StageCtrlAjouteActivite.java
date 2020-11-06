@@ -24,7 +24,6 @@ public class StageCtrlAjouteActivite {
 
     public void  ajouteActivite(){
         String nomStage = this.vueStage.saisirNom();
-        this.ctrlActivite.setActivite(new Activite());
         this.ctrlActivite.encodeActivite();
         stages.getStages().get(nomStage).ajouteActivite(this.ctrlActivite.getActivite());
     }

@@ -5,6 +5,7 @@ public class Factory {
     private  StageCtrlEncode ctrlEncode;
     private  StageCtrlModifNom ctrlModifNom;
     private  StageCtrlAjouteActivite ctrlAjouteActivite;
+    private  StgCtrlAffCollAct ctrlAffCollAct;
     private  MenuGeneral menuG;
     private  MenuModif menuM;
     private  Stages stages;
@@ -27,6 +28,7 @@ public class Factory {
             this.menuM = new MenuModif();
             this.menuM.setCtrlModifNom(this.getCtrlModifNom());
             this.menuM.setCtrlAjouteActivite(this.getCtrlAjouteActivite());
+            this.menuM.setCtrlAffCollAct(this.getCtrlAffCollAct());
         }
         return menuM;
     }
@@ -58,6 +60,16 @@ public class Factory {
             this.ctrlAjouteActivite.setVueAct(this.getVueAct());
         }
         return this.ctrlAjouteActivite;
+    }
+
+    public StgCtrlAffCollAct getCtrlAffCollAct() {
+        if(this.ctrlAffCollAct == null){
+            this.ctrlAffCollAct = new StgCtrlAffCollAct();
+            this.ctrlAffCollAct.setStages(this.getStages());
+            this.ctrlAffCollAct.setVueAct(this.getVueAct());
+            this.ctrlAffCollAct.setVueStg(this.getVueStage());
+        }
+        return ctrlAffCollAct;
     }
 
     public Stages getStages() {
