@@ -2,6 +2,7 @@ package be.technifutur.java2020.labo1GS;
 
 
 import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 import java.util.HashMap;
 
 public class Stage {
@@ -49,7 +50,7 @@ public class Stage {
     public boolean ajouteActivite(Activite activite){
         boolean verif = true;
         if(!activites.containsKey(activite.getNom())) {
-            if(activite.getDebut().isAfter(this.getDebut())){
+            if(!activite.getDebut().isBefore(this.getDebut()) && !activite.getDebut().plusMinutes(activite.getDuree()).isAfter(this.getFin())){
                 this.activites.putIfAbsent(activite.getNom(), activite);
                 verif = true;
             }

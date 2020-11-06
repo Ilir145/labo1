@@ -6,6 +6,8 @@ public class Factory {
     private  StageCtrlModifNom ctrlModifNom;
     private  StageCtrlAjouteActivite ctrlAjouteActivite;
     private  StgCtrlAffCollAct ctrlAffCollAct;
+    private  StgCtrlAffStg ctrlAffStg;
+    private  StgCtrlAffHoraire ctrlAffHoraire;
     private  MenuGeneral menuG;
     private  MenuModif menuM;
     private  Stages stages;
@@ -19,6 +21,8 @@ public class Factory {
             this.menuG.setCtrlEncode(this.getCtrlEncode());
             this.menuG.setCtrlModif(this.getCtrlModifNom());
             this.menuG.setMenuModif(this.getMenuM());
+            this.menuG.setCtrlAffStg(this.getCtrlAffStg());
+            this.menuG.setCtrlAffHoraire(this.getCtrlAffHoraire());
         }
         return menuG;
     }
@@ -72,6 +76,25 @@ public class Factory {
         return ctrlAffCollAct;
     }
 
+    public StgCtrlAffStg getCtrlAffStg() {
+        if(this.ctrlAffStg == null){
+            this.ctrlAffStg = new StgCtrlAffStg();
+            this.ctrlAffStg.setStages(this.getStages());
+            this.ctrlAffStg.setVue(this.getVueStage());
+        }
+        return ctrlAffStg;
+    }
+
+    public StgCtrlAffHoraire getCtrlAffHoraire() {
+        if(this.ctrlAffHoraire == null){
+            this.ctrlAffHoraire = new StgCtrlAffHoraire();
+            this.ctrlAffHoraire.setVueStg(this.getVueStage());
+            this.ctrlAffHoraire.setStages(this.getStages());
+            this.ctrlAffHoraire.setVueAct(this.getVueAct());
+        }
+        return ctrlAffHoraire;
+    }
+
     public Stages getStages() {
         if(this.stages == null){
             this.stages = new Stages();
@@ -82,6 +105,7 @@ public class Factory {
     public StageVue getVueStage() {
         if(this.vueStage == null){
             this.vueStage = new StageVue();
+            this.vueStage.setCollStages(this.getStages());
         }
         return vueStage;
     }

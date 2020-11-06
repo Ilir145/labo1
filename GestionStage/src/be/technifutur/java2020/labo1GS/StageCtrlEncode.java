@@ -29,7 +29,7 @@ public class StageCtrlEncode {
         if(matcherD.matches() && matcherF.matches()){
                 LocalDateTime debut = LocalDateTime.parse(debutS);
                 LocalDateTime fin = LocalDateTime.parse(finS);
-                if(debut.isBefore(fin) && !debut.isEqual(fin)) {
+                if(!debut.isAfter(fin)) {
                     this.stages.ajouteStage(new Stage(nom, debut, fin));
                     System.out.println("Le stage a bien été encoder");
                 }

@@ -20,6 +20,5 @@ public class StageCtrlModifNom {
         String nom = this.vue.saisirNom();
         System.out.println("Nouveau nom");
         String newNom = this.vue.saisirNom();
-        this.stages.getStages().get(nom).setNom(newNom);
     }
 }

@@ -37,10 +37,6 @@ public class MenuModif {
             choix = sc.nextInt();
             switch (choix) {
                 case 1:
-                    System.out.println("Entrez le nom du stage :");
-                    nom = sc.next();
-                    System.out.println("Entrez le nouveau nom :");
-                    String newNom = sc.next();
                     ctrlModifNom.modifNom();
                     break;
                 case 2:
