@@ -8,7 +8,7 @@ public class MenuGeneral {
     private StageCtrlEncode ctrlEncode;
     private StageCtrlModifNom ctrlModifNom;
     private StgCtrlAffStg ctrlAffStg;
-    private  StgCtrlAffHoraire ctrlAffHoraire;
+    private StgCtrlAffHoraire ctrlAffHoraire;
 
     public void setCtrlAffHoraire(StgCtrlAffHoraire ctrlAffHoraire) {
         this.ctrlAffHoraire = ctrlAffHoraire;
@@ -63,6 +63,7 @@ public class MenuGeneral {
                 break;
             case 6:
                 this.ctrlAffHoraire.affHoraire();
+                break;
             case 7:
                 System.out.println("Au revoir");
                 break;

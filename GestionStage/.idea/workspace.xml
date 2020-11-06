@@ -19,16 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fa8bf48-a290-4101-9230-47416aad6a7f" name="Default Changelist" comment="Affiche activites">
-      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/StgCtrlAffHoraire.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/StgCtrlAffStg.java" afterDir="false" />
+    <list default="true" id="7fa8bf48-a290-4101-9230-47416aad6a7f" name="Default Changelist" comment="Tri des activités">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Factory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/MenuGeneral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/MenuGeneral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/MenuModif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/MenuModif.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Stage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/StageCtrlEncode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/StageCtrlEncode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/StageCtrlModifNom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/StageCtrlModifNom.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604653194005</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Tri des activités">
+      <created>1604667508714</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604667508714</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,7 +171,8 @@
     <MESSAGE value="Class menu,activite et réorganisation" />
     <MESSAGE value="Ajout d'activite et factory2.0" />
     <MESSAGE value="Affiche activites" />
-    <option name="LAST_COMMIT_MESSAGE" value="Affiche activites" />
+    <MESSAGE value="Tri des activités" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tri des activités" />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="42" key="#com.intellij.ide.util.MemberChooser" timestamp="1604664232044">
@@ -182,30 +183,30 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1604488770083" />
-    <state width="1237" height="262" key="GridCell.Tab.0.bottom" timestamp="1604667081298">
+    <state width="1237" height="262" key="GridCell.Tab.0.bottom" timestamp="1604667257290">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="262" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604667081298" />
-    <state width="1237" height="262" key="GridCell.Tab.0.center" timestamp="1604667081298">
+    <state width="1237" height="262" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604667257290" />
+    <state width="1237" height="262" key="GridCell.Tab.0.center" timestamp="1604667257290">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="262" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604667081298" />
-    <state width="1237" height="262" key="GridCell.Tab.0.left" timestamp="1604667081298">
+    <state width="1237" height="262" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604667257290" />
+    <state width="1237" height="262" key="GridCell.Tab.0.left" timestamp="1604667257290">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="262" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604667081298" />
-    <state width="1237" height="262" key="GridCell.Tab.0.right" timestamp="1604667081298">
+    <state width="1237" height="262" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604667257290" />
+    <state width="1237" height="262" key="GridCell.Tab.0.right" timestamp="1604667257290">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="262" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604667081298" />
+    <state width="1237" height="262" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604667257290" />
     <state x="121" y="0" key="SettingsEditor" timestamp="1604480891691">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1604480891691" />
-    <state x="207" y="138" key="Vcs.Push.Dialog.v2" timestamp="1604653208548">
+    <state x="207" y="138" key="Vcs.Push.Dialog.v2" timestamp="1604667520196">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="207" y="138" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604653208548" />
+    <state x="207" y="138" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604667520196" />
     <state x="334" y="356" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1604478450000">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
