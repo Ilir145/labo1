@@ -17,6 +17,7 @@ public class Stage {
         this.debut = debut;
         this.fin = fin;
         this.activites = new HashMap<>();
+        this.participants = new HashMap<>();
     }
 
     public String getNom() {

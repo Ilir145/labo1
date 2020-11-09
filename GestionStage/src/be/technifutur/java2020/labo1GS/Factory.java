@@ -8,6 +8,7 @@ public class Factory {
     private  StgCtrlAffCollAct ctrlAffCollAct;
     private  StgCtrlAffStg ctrlAffStg;
     private  StgCtrlAffHoraire ctrlAffHoraire;
+    private StageCtrlAjouteParticipants ctrlAjouteParticipants;
     private  MenuGeneral menuG;
     private  MenuModif menuM;
     private  Stages stages;
@@ -15,6 +16,8 @@ public class Factory {
     private  ActiviteVue vueAct;
     private ActiviteCtrl ctrlAct;
     private HoraireVue vueHoraire;
+    private ParticipantVue participantVue;
+    private  ParticipantCtrl participantCtrl;
 
     public MenuGeneral getMenuG() {
         if(this.menuG == null){
@@ -34,6 +37,7 @@ public class Factory {
             this.menuM.setCtrlModifNom(this.getCtrlModifNom());
             this.menuM.setCtrlAjouteActivite(this.getCtrlAjouteActivite());
             this.menuM.setCtrlAffCollAct(this.getCtrlAffCollAct());
+            this.menuM.setCtrlAjouteParticipants(this.getCtrlAjouteParticipants());
         }
         return menuM;
     }
@@ -97,6 +101,17 @@ public class Factory {
         return ctrlAffHoraire;
     }
 
+    public StageCtrlAjouteParticipants getCtrlAjouteParticipants() {
+        if(this.ctrlAjouteParticipants == null){
+            this.ctrlAjouteParticipants = new StageCtrlAjouteParticipants();
+            this.ctrlAjouteParticipants.setCtrlPart(this.getParticipantCtrl());
+            this.ctrlAjouteParticipants.setVuePart(this.getParticipantVue());
+            this.ctrlAjouteParticipants.setStages(this.getStages());
+            this.ctrlAjouteParticipants.setVueStage(this.getVueStage());
+        }
+        return ctrlAjouteParticipants;
+    }
+
     public Stages getStages() {
         if(this.stages == null){
             this.stages = new Stages();
@@ -132,5 +147,20 @@ public class Factory {
             this.vueHoraire = new HoraireVue();
         }
         return vueHoraire;
+    }
+
+    public ParticipantCtrl getParticipantCtrl() {
+        if(this.participantCtrl == null){
+            this.participantCtrl = new ParticipantCtrl();
+            this.participantCtrl.setVue(this.getParticipantVue());
+        }
+        return participantCtrl;
+    }
+
+    public ParticipantVue getParticipantVue() {
+        if(this.participantVue == null){
+            this.participantVue = new ParticipantVue();
+        }
+        return participantVue;
     }
 }

@@ -7,7 +7,11 @@ public class UserTest implements User{
             "4","stage1","sql1","2017-12-06T11:00:00","120",
             "4","stage1","html1","2017-12-07T08:30:00","120",
             "4","stage1","java2","2017-12-07T11:00:00","120",
-            "4","stage1","sql2","2017-12-08T08:30:00","180","6","6","stage1","7"};
+            "4","stage1","sql2","2017-12-08T08:30:00","180",
+            "6","stage1","Ilir","Beqiri","ilir@gmail.com","SrgAth",
+            "6","stage1","Ab","sang","x","x",
+            "6","stage1","Al","Ias","x","Nom",
+            "7","6","stage1","7"};
     private int indCourant = -1;
 
     @Override
