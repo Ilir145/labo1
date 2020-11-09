@@ -9,7 +9,11 @@ public class MenuGeneral {
     private StageCtrlModifNom ctrlModifNom;
     private StgCtrlAffStg ctrlAffStg;
     private StgCtrlAffHoraire ctrlAffHoraire;
+    private StgCtrlAffPart ctrlAffPart;
 
+    public void setCtrlAffPart(StgCtrlAffPart ctrlAffPart) {
+        this.ctrlAffPart = ctrlAffPart;
+    }
 
     public void setCtrlAffHoraire(StgCtrlAffHoraire ctrlAffHoraire) {
         this.ctrlAffHoraire = ctrlAffHoraire;
@@ -35,15 +39,16 @@ public class MenuGeneral {
         int choix = 0;
 
 
-        while(choix != 7){
+        while(choix != 8){
         System.out.println("           Menu ");
         System.out.println("1)  Créer stage");
         System.out.println("2)  Modifier stage");
         System.out.println("3)  Supprimer stage");
         System.out.println("4)  Afficher les stages");
         System.out.println("5)  Afficher un stage");
-        System.out.println("6)  Afficher horaire");
-        System.out.println("7)  Quitter");
+        System.out.println("6)  Affichant participants d'un stage");
+        System.out.println("7)  Afficher horaire");
+        System.out.println("8)  Quitter");
 
         choix = Integer.parseInt(user.getString());
         switch(choix) {
@@ -63,9 +68,12 @@ public class MenuGeneral {
                 this.ctrlAffStg.affStg(user);
                 break;
             case 6:
-                this.ctrlAffHoraire.affHoraire(user);
+                this.ctrlAffPart.affParticipants(user);
                 break;
             case 7:
+                this.ctrlAffHoraire.affHoraire(user);
+                break;
+            case 8:
                 System.out.println("Au revoir");
                 break;
             default:

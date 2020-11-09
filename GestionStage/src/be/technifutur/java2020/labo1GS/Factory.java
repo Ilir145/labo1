@@ -8,6 +8,7 @@ public class Factory {
     private  StgCtrlAffCollAct ctrlAffCollAct;
     private  StgCtrlAffStg ctrlAffStg;
     private  StgCtrlAffHoraire ctrlAffHoraire;
+    private StgCtrlAffPart ctrlAffPart;
     private StageCtrlAjouteParticipants ctrlAjouteParticipants;
     private  MenuGeneral menuG;
     private  MenuModif menuM;
@@ -27,6 +28,7 @@ public class Factory {
             this.menuG.setMenuModif(this.getMenuM());
             this.menuG.setCtrlAffStg(this.getCtrlAffStg());
             this.menuG.setCtrlAffHoraire(this.getCtrlAffHoraire());
+            this.menuG.setCtrlAffPart(this.getCtrlAffPart());
         }
         return menuG;
     }
@@ -99,6 +101,16 @@ public class Factory {
             this.ctrlAffHoraire.setVueHoraire(this.getVueHoraire());
         }
         return ctrlAffHoraire;
+    }
+
+    public StgCtrlAffPart getCtrlAffPart() {
+        if(this.ctrlAffPart == null){
+            this.ctrlAffPart = new StgCtrlAffPart();
+            this.ctrlAffPart.setStages(this.getStages());
+            this.ctrlAffPart.setVuePart(this.getParticipantVue());
+            this.ctrlAffPart.setVueStg(this.getVueStage());
+        }
+        return ctrlAffPart;
     }
 
     public StageCtrlAjouteParticipants getCtrlAjouteParticipants() {

@@ -20,6 +20,10 @@ public class Stage {
         this.participants = new HashMap<>();
     }
 
+    public HashMap<String, Participant> getParticipants() {
+        return participants;
+    }
+
     public String getNom() {
         return nom;
     }
@@ -43,6 +47,7 @@ public class Stage {
     public void setFin(LocalDateTime fin) {
         this.fin = fin;
     }
+
 
     // A rendre nn modifiable
     public HashMap<String, Activite> getActivites() {
