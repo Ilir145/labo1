@@ -10,12 +10,14 @@ public class Factory {
     private  StgCtrlAffHoraire ctrlAffHoraire;
     private StgCtrlAffPart ctrlAffPart;
     private StageCtrlAjouteParticipants ctrlAjouteParticipants;
+    private PartCtrlAffPart partCtrlAffPart;
     private  MenuGeneral menuG;
     private  MenuModif menuM;
     private  Stages stages;
     private  StageVue vueStage;
     private  ActiviteVue vueAct;
     private ActiviteCtrl ctrlAct;
+    private Participants participants;
     private HoraireVue vueHoraire;
     private ParticipantVue participantVue;
     private  ParticipantCtrl participantCtrl;
@@ -29,6 +31,7 @@ public class Factory {
             this.menuG.setCtrlAffStg(this.getCtrlAffStg());
             this.menuG.setCtrlAffHoraire(this.getCtrlAffHoraire());
             this.menuG.setCtrlAffPart(this.getCtrlAffPart());
+            this.menuG.setPartCtrlAffPart(this.getPartCtrlAffPart());
         }
         return menuG;
     }
@@ -120,8 +123,18 @@ public class Factory {
             this.ctrlAjouteParticipants.setVuePart(this.getParticipantVue());
             this.ctrlAjouteParticipants.setStages(this.getStages());
             this.ctrlAjouteParticipants.setVueStage(this.getVueStage());
+            this.ctrlAjouteParticipants.setParticipants(this.getParticipants());
         }
         return ctrlAjouteParticipants;
+    }
+
+    public PartCtrlAffPart getPartCtrlAffPart() {
+        if(this.partCtrlAffPart == null){
+            this.partCtrlAffPart = new PartCtrlAffPart();
+            this.partCtrlAffPart.setParticipants(this.getParticipants());
+            this.partCtrlAffPart.setVue(this.getParticipantVue());
+        }
+        return partCtrlAffPart;
     }
 
     public Stages getStages() {
@@ -159,6 +172,13 @@ public class Factory {
             this.vueHoraire = new HoraireVue();
         }
         return vueHoraire;
+    }
+
+    public Participants getParticipants() {
+        if(this.participants == null){
+            this.participants = new Participants();
+        }
+        return participants;
     }
 
     public ParticipantCtrl getParticipantCtrl() {

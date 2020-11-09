@@ -12,7 +12,7 @@ public class UserTest implements User{
             "6","stage1","Ilir","Beqiri","ilir@gmail.com","SrgAth",
             "6","stage1","Ab","sang","x","x",
             "6","stage1","Al","Ias","x","Nom",
-            "7","7","stage1","6","stage1","8"};
+            "7","8","stage1","6","stage1","7","9"};
     private int indCourant = -1;
 
     @Override

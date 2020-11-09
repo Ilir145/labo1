@@ -3,9 +3,13 @@ package be.technifutur.java2020.labo1GS;
 public class StageCtrlAjouteParticipants {
     private Stages stages;
     private StageVue vueStage;
+    private Participants participants;
     private ParticipantCtrl ctrlPart;
     private ParticipantVue vuePart;
 
+    public void setParticipants(Participants participants) {
+        this.participants = participants;
+    }
 
     public void setVueStage(StageVue vueStage) {
         this.vueStage = vueStage;
@@ -26,6 +30,7 @@ public class StageCtrlAjouteParticipants {
     public void  ajouteParticipant(User user){
         String nomStage = this.vueStage.saisirNom(user);
         this.ctrlPart.encodeParticipant(user);
-        stages.getStages().get(nomStage).ajouteParticipant(this.ctrlPart.getParticipant());
+        this.stages.getStages().get(nomStage).ajouteParticipant(this.ctrlPart.getParticipant());
+        this.participants.ajoutePart(this.ctrlPart.getParticipant());
     }
 }

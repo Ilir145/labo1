@@ -19,11 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fa8bf48-a290-4101-9230-47416aad6a7f" name="Default Changelist" comment="Encodage de participants">
-      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/StgCtrlAffPart.java" afterDir="false" />
+    <list default="true" id="7fa8bf48-a290-4101-9230-47416aad6a7f" name="Default Changelist" comment="Affichage participants">
+      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/PartCtrlAffPart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Participants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Factory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/MenuGeneral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/MenuGeneral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Stage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/StageCtrlAjouteParticipants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/StageCtrlAjouteParticipants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604920844679</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Affichage participants">
+      <created>1604924848768</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1604924848769</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,7 +207,8 @@
     <MESSAGE value="HoraireVue 2.0" />
     <MESSAGE value="Horaire 3.0 + User" />
     <MESSAGE value="Encodage de participants" />
-    <option name="LAST_COMMIT_MESSAGE" value="Encodage de participants" />
+    <MESSAGE value="Affichage participants" />
+    <option name="LAST_COMMIT_MESSAGE" value="Affichage participants" />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="42" key="#com.intellij.ide.util.MemberChooser" timestamp="1604664232044">
@@ -210,30 +219,30 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1604912902035" />
-    <state width="1237" height="270" key="GridCell.Tab.0.bottom" timestamp="1604920746105">
+    <state width="1237" height="63" key="GridCell.Tab.0.bottom" timestamp="1604924786079">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="270" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604920746105" />
-    <state width="1237" height="270" key="GridCell.Tab.0.center" timestamp="1604920746105">
+    <state width="1237" height="63" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604924786079" />
+    <state width="1237" height="63" key="GridCell.Tab.0.center" timestamp="1604924786078">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="270" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604920746105" />
-    <state width="1237" height="270" key="GridCell.Tab.0.left" timestamp="1604920746105">
+    <state width="1237" height="63" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604924786078" />
+    <state width="1237" height="63" key="GridCell.Tab.0.left" timestamp="1604924786078">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="270" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604920746105" />
-    <state width="1237" height="270" key="GridCell.Tab.0.right" timestamp="1604920746105">
+    <state width="1237" height="63" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604924786078" />
+    <state width="1237" height="63" key="GridCell.Tab.0.right" timestamp="1604924786078">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="270" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604920746105" />
+    <state width="1237" height="63" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604924786078" />
     <state x="121" y="0" key="SettingsEditor" timestamp="1604480891691">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1604480891691" />
-    <state x="207" y="138" key="Vcs.Push.Dialog.v2" timestamp="1604920857575">
+    <state x="207" y="138" key="Vcs.Push.Dialog.v2" timestamp="1604924861346">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="207" y="138" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604920857575" />
+    <state x="207" y="138" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604924861346" />
     <state x="334" y="356" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1604478450000">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
