@@ -17,12 +17,12 @@ public class StageCtrlEncode {
         this.stages = stages;
     }
 
-    public void encodeStage(){
+    public void encodeStage(User user){
         Pattern patternDateTemps = Pattern.compile("([0-9][0-9][0-9][0-9])-([0-9][0-9])-([0-9][0-9])(T)([0-9][0-9]):([0-9][0-9]):([0-9][0-9])");
 
-        String nom = vue.saisirNom();
-        String debutS = vue.saisirDateTempsD();
-        String finS = vue.saisirDateTempsF();
+        String nom = vue.saisirNom(user);
+        String debutS = vue.saisirDateTempsD(user);
+        String finS = vue.saisirDateTempsF(user);
 
         Matcher matcherD = patternDateTemps.matcher(debutS);
         Matcher matcherF = patternDateTemps.matcher(finS);

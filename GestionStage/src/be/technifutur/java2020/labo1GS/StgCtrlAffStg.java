@@ -12,8 +12,8 @@ public class StgCtrlAffStg {
         this.vue = vue;
     }
 
-    public void affStg(){
-        String nom = this.vue.saisirNom();
+    public void affStg(User user){
+        String nom = this.vue.saisirNom(user);
         this.vue.afficheStage(this.stages.getStages().get(nom));
     }
 

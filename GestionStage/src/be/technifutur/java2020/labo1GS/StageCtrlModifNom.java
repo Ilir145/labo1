@@ -15,10 +15,10 @@ public class StageCtrlModifNom {
         this.stages = stages;
     }
 
-    public void modifNom(){
+    public void modifNom(User user){
         System.out.println("Nom du stage");
-        String nom = this.vue.saisirNom();
+        String nom = this.vue.saisirNom(user);
         System.out.println("Nouveau nom");
-        String newNom = this.vue.saisirNom();
+        String newNom = this.vue.saisirNom(user);
     }
 }

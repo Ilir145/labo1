@@ -25,8 +25,8 @@ public class StgCtrlAffHoraire {
         this.vueStg = vueStg;
     }
 
-    public void affHoraire(){
-        String nom = this.vueStg.saisirNom();
+    public void affHoraire(User user){
+        String nom = this.vueStg.saisirNom(user);
         Activite[] tabAct = new Activite[this.stages.getStages().get(nom).getActivites().size()];
         int i = 0;
         for (Activite act : this.stages.getStages().get(nom).getActivites().values()) {

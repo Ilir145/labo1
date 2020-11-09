@@ -21,11 +21,11 @@ public class ActiviteCtrl {
         return activite;
     }
 
-    public void encodeActivite(){
+    public void encodeActivite(User user){
         Pattern patternDateTemps = Pattern.compile("([0-9][0-9][0-9][0-9])-([0-9][0-9])-([0-9][0-9])(T)([0-9][0-9]):([0-9][0-9]):([0-9][0-9])");
-        String nom = vue.saisirNom();
-        String debutS = vue.saisirDateTempsD();
-        int duree = vue.saisirDuree();
+        String nom = vue.saisirNom(user);
+        String debutS = vue.saisirDateTempsD(user);
+        int duree = vue.saisirDuree(user);
 
         Matcher matcherD = patternDateTemps.matcher(debutS);
         if(matcherD.matches()){

@@ -24,28 +24,25 @@ public class StageVue {
         }
     }
 
-    public  String saisirNom(){
+    public  String saisirNom(User user){
         String saisie;
-        Scanner sc = new Scanner(System.in);
         System.out.println("Entrez le nom du stage:");
-        saisie = sc.next();
+        saisie = user.getString();
         return saisie;
     }
 
-    public String saisirDateTempsD(){
+    public String saisirDateTempsD(User user){
         String saisie;
-        Scanner sc = new Scanner(System.in);
         System.out.println("Entrez la date de début (exemple : 2017-12-05T11:30:30) :");
-        saisie = sc.next();
+        saisie = user.getString();
         return saisie;
 
     }
 
-    public String saisirDateTempsF(){
+    public String saisirDateTempsF(User user){
         String saisie;
-        Scanner sc = new Scanner(System.in);
         System.out.println("Entrez la date de fin (exemple : 2017-12-05T11:30:30) :");
-        saisie = sc.next();
+        saisie = user.getString();
         return saisie;
 
     }

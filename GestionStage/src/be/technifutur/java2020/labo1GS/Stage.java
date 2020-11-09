@@ -10,6 +10,7 @@ public class Stage {
     private LocalDateTime debut;
     private LocalDateTime fin;
     private HashMap<String,Activite> activites;
+    private HashMap<String,Participant> participants;
 
     public Stage(String nom,LocalDateTime debut,LocalDateTime fin){
         this.nom = nom;
@@ -61,6 +62,16 @@ public class Stage {
         }
         return verif;
     }
+
+    public boolean ajouteParticipant(Participant participant){
+        boolean verif = true;
+        if(!activites.containsKey(participant.getNomPrenom())) {
+                this.participants.putIfAbsent(participant.getNomPrenom(), participant);
+                verif = true;
+        }
+        return verif;
+    }
+
 
 
 }

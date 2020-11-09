@@ -20,10 +20,8 @@ public class MenuModif {
         this.ctrlModifNom = ctrlModifNom;
     }
 
-    public void start() {
+    public void start(User user) {
         int choix = 0;
-        String nom;
-        Scanner sc = new Scanner(System.in);
 
         while (choix != 6) {
             System.out.println("        Menu modif ");
@@ -34,10 +32,10 @@ public class MenuModif {
             System.out.println("5)  Afficher les activites d un stage");
             System.out.println("6)  Revenir au menu principal");
 
-            choix = sc.nextInt();
+            choix = Integer.parseInt(user.getString());
             switch (choix) {
                 case 1:
-                    ctrlModifNom.modifNom();
+                    ctrlModifNom.modifNom(user);
                     break;
                 case 2:
                     /*System.out.println("Entrez le nom du stage :");
@@ -49,10 +47,10 @@ public class MenuModif {
                    /* ctrl.modifDateFin();*/
                     break;
                 case 4:
-                    ctrlAjouteActivite.ajouteActivite();
+                    ctrlAjouteActivite.ajouteActivite(user);
                     break;
                 case 5:
-                    ctrlAffCollAct.afficheACtivites();
+                    ctrlAffCollAct.afficheACtivites(user);
                     break;
                 case 6:
                     System.out.println("<-");

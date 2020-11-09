@@ -7,9 +7,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         //Lancement de la Factory
-
+        User user = new UserTest();
         Factory factory = new Factory();
-        factory.getMenuG().start();
+        factory.getMenuG().start(user);
         factory = null;
 
         //Lancement via initialisation dans des variables

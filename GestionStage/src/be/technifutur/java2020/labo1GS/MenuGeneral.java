@@ -10,6 +10,7 @@ public class MenuGeneral {
     private StgCtrlAffStg ctrlAffStg;
     private StgCtrlAffHoraire ctrlAffHoraire;
 
+
     public void setCtrlAffHoraire(StgCtrlAffHoraire ctrlAffHoraire) {
         this.ctrlAffHoraire = ctrlAffHoraire;
     }
@@ -30,9 +31,9 @@ public class MenuGeneral {
         this.menuModif = menuModif;
     }
 
-    public void start(){
+    public void start(User user){
         int choix = 0;
-    Scanner sc = new Scanner(System.in);
+
 
         while(choix != 7){
         System.out.println("           Menu ");
@@ -44,13 +45,13 @@ public class MenuGeneral {
         System.out.println("6)  Afficher horaire");
         System.out.println("7)  Quitter");
 
-        choix = sc.nextInt();
+        choix = Integer.parseInt(user.getString());
         switch(choix) {
             case 1:
-                this.ctrlEncode.encodeStage();
+                this.ctrlEncode.encodeStage(user);
                 break;
             case 2:
-                this.menuModif.start();
+                this.menuModif.start(user);
                 break;
             case 3:
                 System.out.println("Supprimer stage");
@@ -59,10 +60,10 @@ public class MenuGeneral {
                 this.ctrlAffStg.affStages();
                 break;
             case 5:
-                this.ctrlAffStg.affStg();
+                this.ctrlAffStg.affStg(user);
                 break;
             case 6:
-                this.ctrlAffHoraire.affHoraire();
+                this.ctrlAffHoraire.affHoraire(user);
                 break;
             case 7:
                 System.out.println("Au revoir");

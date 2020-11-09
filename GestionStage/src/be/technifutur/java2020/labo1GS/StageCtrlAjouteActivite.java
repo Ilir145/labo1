@@ -22,9 +22,9 @@ public class StageCtrlAjouteActivite {
         this.ctrlActivite = ctrlActivite;
     }
 
-    public void  ajouteActivite(){
-        String nomStage = this.vueStage.saisirNom();
-        this.ctrlActivite.encodeActivite();
+    public void  ajouteActivite(User user){
+        String nomStage = this.vueStage.saisirNom(user);
+        this.ctrlActivite.encodeActivite(user);
         stages.getStages().get(nomStage).ajouteActivite(this.ctrlActivite.getActivite());
     }
 }

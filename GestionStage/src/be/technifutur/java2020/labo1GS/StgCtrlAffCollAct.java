@@ -17,8 +17,8 @@ public class StgCtrlAffCollAct {
         this.stages = stages;
     }
 
-    public void afficheACtivites(){
-        String nomStg = this.vueStg.saisirNom();
+    public void afficheACtivites(User user){
+        String nomStg = this.vueStg.saisirNom(user);
         for (Activite act:
                 this.stages.getStages().get(nomStg).getActivites().values()) {
             this.vueAct.setActivite(act);
