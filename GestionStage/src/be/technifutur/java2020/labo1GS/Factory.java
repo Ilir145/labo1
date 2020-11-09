@@ -14,6 +14,7 @@ public class Factory {
     private  StageVue vueStage;
     private  ActiviteVue vueAct;
     private ActiviteCtrl ctrlAct;
+    private HoraireVue vueHoraire;
 
     public MenuGeneral getMenuG() {
         if(this.menuG == null){
@@ -91,6 +92,7 @@ public class Factory {
             this.ctrlAffHoraire.setVueStg(this.getVueStage());
             this.ctrlAffHoraire.setStages(this.getStages());
             this.ctrlAffHoraire.setVueAct(this.getVueAct());
+            this.ctrlAffHoraire.setVueHoraire(this.getVueHoraire());
         }
         return ctrlAffHoraire;
     }
@@ -125,4 +127,10 @@ public class Factory {
         return this.ctrlAct;
     }
 
+    public HoraireVue getVueHoraire() {
+        if(this.vueHoraire == null){
+            this.vueHoraire = new HoraireVue();
+        }
+        return vueHoraire;
+    }
 }

@@ -7,6 +7,11 @@ public class StgCtrlAffHoraire {
     private Stages stages;
     private StageVue vueStg;
     private ActiviteVue vueAct;
+    private HoraireVue vueHoraire;
+
+    public void setVueHoraire(HoraireVue vueHoraire) {
+        this.vueHoraire = vueHoraire;
+    }
 
     public void setVueAct(ActiviteVue vueAct) {
         this.vueAct = vueAct;
@@ -29,15 +34,9 @@ public class StgCtrlAffHoraire {
             i++;
         }
         tabAct = triTabAct(tabAct);
-        this.afficheActTab(tabAct);
+        this.vueHoraire.afficheHoraire(tabAct);
     }
 
-    public void afficheActTab(Activite[] activites){
-        for (int i = 0; i < activites.length;i++){
-            this.vueAct.setActivite(activites[i]);
-            this.vueAct.afficheActivite();
-        }
-    }
 
     public Activite[] triTabAct(Activite[] activites){
         Activite[] tabActRetour = activites;

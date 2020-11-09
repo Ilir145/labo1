@@ -11,7 +11,7 @@ public class Activite {
         super();
     }
 
-    public Activite(String nom,LocalDateTime debut,int fin){
+    public Activite(String nom,LocalDateTime debut,int duree){
         this.nom = nom;
         this.debut = debut;
         this.duree = duree;
