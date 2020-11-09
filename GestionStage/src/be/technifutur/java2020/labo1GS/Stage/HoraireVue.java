@@ -1,6 +1,6 @@
-package be.technifutur.java2020.labo1GS;
+package be.technifutur.java2020.labo1GS.Stage;
 
-import java.util.Scanner;
+import be.technifutur.java2020.labo1GS.Activite.Activite;
 
 public class HoraireVue {
 

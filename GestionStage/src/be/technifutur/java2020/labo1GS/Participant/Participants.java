@@ -1,9 +1,9 @@
-package be.technifutur.java2020.labo1GS;
+package be.technifutur.java2020.labo1GS.Participant;
 
 import java.util.HashMap;
 
 public class Participants {
-    HashMap<String,Participant> participants;
+    HashMap<String, Participant> participants;
 
     public Participants(){
         this.participants = new HashMap<>();

@@ -1,8 +1,7 @@
 package be.technifutur.java2020.labo1GS;
 
-import java.awt.*;
-import java.util.Iterator;
-import java.util.Scanner;
+import be.technifutur.java2020.labo1GS.User.User;
+import be.technifutur.java2020.labo1GS.User.UserTest;
 
 public class Main {
     public static void main(String[] args) {

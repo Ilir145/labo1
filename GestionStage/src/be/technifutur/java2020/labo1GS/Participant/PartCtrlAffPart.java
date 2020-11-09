@@ -1,4 +1,4 @@
-package be.technifutur.java2020.labo1GS;
+package be.technifutur.java2020.labo1GS.Participant;
 
 public class PartCtrlAffPart {
     Participants participants;

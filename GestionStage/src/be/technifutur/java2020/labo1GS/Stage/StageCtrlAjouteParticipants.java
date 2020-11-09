@@ -1,4 +1,9 @@
-package be.technifutur.java2020.labo1GS;
+package be.technifutur.java2020.labo1GS.Stage;
+
+import be.technifutur.java2020.labo1GS.Participant.ParticipantCtrl;
+import be.technifutur.java2020.labo1GS.Participant.ParticipantVue;
+import be.technifutur.java2020.labo1GS.Participant.Participants;
+import be.technifutur.java2020.labo1GS.User.User;
 
 public class StageCtrlAjouteParticipants {
     private Stages stages;

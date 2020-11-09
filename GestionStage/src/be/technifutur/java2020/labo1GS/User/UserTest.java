@@ -1,6 +1,8 @@
-package be.technifutur.java2020.labo1GS;
+package be.technifutur.java2020.labo1GS.User;
 
-public class UserTest implements User{
+import be.technifutur.java2020.labo1GS.User.User;
+
+public class UserTest implements User {
     private String[] tabChar = {"1","stage1","2017-12-05T11:30:30","2019-10-05T12:00:00",
             "1","stage2","2020-01-09T08:30:00","2020-07-05T15:30:00",
             "2","4","stage1","java1","2017-12-06T08:30:00","120",

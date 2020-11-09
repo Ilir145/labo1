@@ -1,9 +1,11 @@
-package be.technifutur.java2020.labo1GS;
+package be.technifutur.java2020.labo1GS.Stage;
+
+import be.technifutur.java2020.labo1GS.Stage.Stage;
 
 import java.util.HashMap;
 
 public class Stages {
-    private  HashMap<String,Stage> stages;
+    private  HashMap<String, Stage> stages;
 
     public Stages(){
         stages = new HashMap<>();

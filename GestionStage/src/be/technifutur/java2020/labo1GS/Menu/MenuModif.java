@@ -1,7 +1,10 @@
-package be.technifutur.java2020.labo1GS;
+package be.technifutur.java2020.labo1GS.Menu;
 
-import java.time.LocalDateTime;
-import java.util.Scanner;
+import be.technifutur.java2020.labo1GS.Stage.StageCtrlAjouteActivite;
+import be.technifutur.java2020.labo1GS.Stage.StageCtrlAjouteParticipants;
+import be.technifutur.java2020.labo1GS.Stage.StageCtrlModifNom;
+import be.technifutur.java2020.labo1GS.Stage.StgCtrlAffCollAct;
+import be.technifutur.java2020.labo1GS.User.User;
 
 public class MenuModif {
     private StageCtrlModifNom ctrlModifNom;

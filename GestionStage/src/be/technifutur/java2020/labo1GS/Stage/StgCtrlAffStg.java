@@ -1,4 +1,6 @@
-package be.technifutur.java2020.labo1GS;
+package be.technifutur.java2020.labo1GS.Stage;
+
+import be.technifutur.java2020.labo1GS.User.User;
 
 public class StgCtrlAffStg {
     private Stages stages;

@@ -1,7 +1,8 @@
-package be.technifutur.java2020.labo1GS;
+package be.technifutur.java2020.labo1GS.Menu;
 
-import java.util.Iterator;
-import java.util.Scanner;
+import be.technifutur.java2020.labo1GS.Participant.PartCtrlAffPart;
+import be.technifutur.java2020.labo1GS.Stage.*;
+import be.technifutur.java2020.labo1GS.User.User;
 
 public class MenuGeneral {
     private MenuModif menuModif;

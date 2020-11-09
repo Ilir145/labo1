@@ -1,5 +1,7 @@
-package be.technifutur.java2020.labo1GS;
+package be.technifutur.java2020.labo1GS.Activite;
 
+
+import be.technifutur.java2020.labo1GS.User.User;
 
 import java.time.LocalDateTime;
 import java.util.regex.Matcher;

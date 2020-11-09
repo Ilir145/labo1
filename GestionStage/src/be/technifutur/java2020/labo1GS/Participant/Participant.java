@@ -1,4 +1,4 @@
-package be.technifutur.java2020.labo1GS;
+package be.technifutur.java2020.labo1GS.Participant;
 
 public class Participant {
     private String nom;
@@ -7,7 +7,7 @@ public class Participant {
     private String email;
 
 
-    public Participant(String nom,String prenom,String email,String club){
+    public Participant(String nom, String prenom, String email, String club){
         this.nom = nom;
         this.prenom = prenom;
         this.club = email;

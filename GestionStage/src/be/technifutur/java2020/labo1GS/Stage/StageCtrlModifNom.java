@@ -1,6 +1,6 @@
-package be.technifutur.java2020.labo1GS;
+package be.technifutur.java2020.labo1GS.Stage;
 
-import java.time.LocalDateTime;
+import be.technifutur.java2020.labo1GS.User.User;
 
 public class StageCtrlModifNom {
     private Stages stages;

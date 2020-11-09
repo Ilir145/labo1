@@ -1,16 +1,18 @@
-package be.technifutur.java2020.labo1GS;
+package be.technifutur.java2020.labo1GS.Stage;
 
+
+import be.technifutur.java2020.labo1GS.Activite.Activite;
+import be.technifutur.java2020.labo1GS.Participant.Participant;
 
 import java.time.LocalDateTime;
-import java.time.ZoneOffset;
 import java.util.HashMap;
 
 public class Stage {
     private String nom;
     private LocalDateTime debut;
     private LocalDateTime fin;
-    private HashMap<String,Activite> activites;
-    private HashMap<String,Participant> participants;
+    private HashMap<String, Activite> activites;
+    private HashMap<String, Participant> participants;
 
     public Stage(String nom,LocalDateTime debut,LocalDateTime fin){
         this.nom = nom;
