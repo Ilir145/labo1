@@ -14,6 +14,13 @@ public class Participant {
         this.email = club;
     }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setClub(String club) {
+        this.club = club;
+    }
 
     public String getNom() {
         return nom;

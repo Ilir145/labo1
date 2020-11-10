@@ -14,6 +14,7 @@ public class UserTest implements User {
             "6","stage1","Ilir","Beqiri","ilir@gmail.com","SrgAth",
             "6","stage1","Ab","sang","x","x",
             "6","stage1","Al","Ias","x","Nom",
+            "6","stage1","Al","Ias","o","New@mail.be","o","NewNom",
             "7","8","stage1","6","stage1","7","9"};
     private int indCourant = -1;
 

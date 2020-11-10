@@ -195,6 +195,7 @@ public class Factory {
         if(this.participantCtrl == null){
             this.participantCtrl = new ParticipantCtrl();
             this.participantCtrl.setVue(this.getParticipantVue());
+            this.participantCtrl.setParticipants(this.getParticipants());
         }
         return participantCtrl;
     }

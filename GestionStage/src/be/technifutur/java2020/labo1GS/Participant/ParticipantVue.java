@@ -29,6 +29,20 @@ public class ParticipantVue {
 
     }
 
+    public void affModifPart(User user){
+        String reponse;
+        System.out.println("Voulez vous modifier l'email ?(o/n)");
+        reponse = user.getString();
+        if(reponse == "o"){
+            this.participant.setEmail(this.saisirEmail(user));
+        }
+        System.out.println("Voulez vous modifier le club ?(o/n)");
+        reponse = user.getString();
+        if(reponse == "o"){
+            this.participant.setClub(this.saisirClub(user));
+        }
+    }
+
 
     public  String saisirNom(User user){
         String saisie;
