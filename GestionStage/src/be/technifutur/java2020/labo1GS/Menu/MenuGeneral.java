@@ -1,5 +1,6 @@
 package be.technifutur.java2020.labo1GS.Menu;
 
+import be.technifutur.java2020.labo1GS.Activite.ActCtrlAffPart;
 import be.technifutur.java2020.labo1GS.Participant.PartCtrlAffPart;
 import be.technifutur.java2020.labo1GS.Stage.*;
 import be.technifutur.java2020.labo1GS.User.User;
@@ -12,6 +13,11 @@ public class MenuGeneral {
     private StgCtrlAffHoraire ctrlAffHoraire;
     private StgCtrlAffPart ctrlAffPart;
     private PartCtrlAffPart partCtrlAffPart;
+    private ActCtrlAffPart actCtrlAffPart;
+
+    public void setActCtrlAffPart(ActCtrlAffPart actCtrlAffPart) {
+        this.actCtrlAffPart = actCtrlAffPart;
+    }
 
     public void setPartCtrlAffPart(PartCtrlAffPart partCtrlAffPart) {
         this.partCtrlAffPart = partCtrlAffPart;
@@ -45,7 +51,7 @@ public class MenuGeneral {
         int choix = 0;
 
 
-        while(choix != 9){
+        while(choix != 10){
         System.out.println("           Menu ");
         System.out.println("1)  Créer stage");
         System.out.println("2)  Modifier stage");
@@ -54,8 +60,9 @@ public class MenuGeneral {
         System.out.println("5)  Afficher un stage");
         System.out.println("6)  Affichant participants d'un stage");
         System.out.println("7)  Afficher tous les participants");
-        System.out.println("8)  Afficher horaire");
-        System.out.println("9)  Quitter");
+        System.out.println("8)  Afficher participants d une activite");
+        System.out.println("9)  Afficher horaire");
+        System.out.println("10)  Quitter");
 
         choix = Integer.parseInt(user.getString());
         switch(choix) {
@@ -81,9 +88,12 @@ public class MenuGeneral {
                 this.partCtrlAffPart.affPart();
                 break;
             case 8:
-                this.ctrlAffHoraire.affHoraire(user);
+                this.actCtrlAffPart.affPart(user);
                 break;
             case 9:
+                this.ctrlAffHoraire.affHoraire(user);
+                break;
+            case 10:
                 System.out.println("Au revoir");
                 break;
             default:

@@ -82,18 +82,18 @@ public class Stage {
     public boolean ajouteParticipant(Participant participant, User user){
         boolean verif = true;
         if(!participants.containsKey(participant.getNomPrenom())) {
-                this.participants.putIfAbsent(participant.getNomPrenom(), participant);
-                verif = true;
-        }
-        System.out.println("Choisissez les activités dans lesquels il sera inscrit :" );
-        for (Activite act: this.activites.values()
-             ) {
-            this.vueAct.setActivite(act);
-            this.vueAct.afficheActivite();
-            System.out.println("Voulez vous l inscrire a cette activité ? (o/n)");
-            String choix = user.getString();
-            if(choix == "o"){
-                act.ajouteParticipants(participant);
+            this.participants.putIfAbsent(participant.getNomPrenom(), participant);
+            verif = true;
+            System.out.println("Choisissez les activités dans lesquels il sera inscrit :");
+            for (Activite act : this.activites.values()
+            ) {
+                this.vueAct.setActivite(act);
+                this.vueAct.afficheActivite();
+                System.out.println("Voulez vous l inscrire a cette activité ? (o/n)");
+                String choix = user.getString();
+                if (choix == "o") {
+                    act.ajouteParticipants(participant);
+                }
             }
         }
         return verif;

@@ -1,6 +1,7 @@
 package be.technifutur.java2020.labo1GS;
 
 
+import be.technifutur.java2020.labo1GS.Activite.ActCtrlAffPart;
 import be.technifutur.java2020.labo1GS.Activite.ActiviteCtrl;
 import be.technifutur.java2020.labo1GS.Activite.ActiviteVue;
 import be.technifutur.java2020.labo1GS.Menu.MenuGeneral;
@@ -21,6 +22,7 @@ public class Factory {
     private StgCtrlAffPart ctrlAffPart;
     private StageCtrlAjouteParticipants ctrlAjouteParticipants;
     private PartCtrlAffPart partCtrlAffPart;
+    private ActCtrlAffPart actCtrlAffPart;
     private MenuGeneral menuG;
     private MenuModif menuM;
     private Stages stages;
@@ -42,6 +44,7 @@ public class Factory {
             this.menuG.setCtrlAffHoraire(this.getCtrlAffHoraire());
             this.menuG.setCtrlAffPart(this.getCtrlAffPart());
             this.menuG.setPartCtrlAffPart(this.getPartCtrlAffPart());
+            this.menuG.setActCtrlAffPart(this.getActCtrlAffPart());
         }
         return menuG;
     }
@@ -145,6 +148,15 @@ public class Factory {
             this.partCtrlAffPart.setVue(this.getParticipantVue());
         }
         return partCtrlAffPart;
+    }
+
+    public ActCtrlAffPart getActCtrlAffPart() {
+        if(this.actCtrlAffPart == null){
+            this.actCtrlAffPart = new ActCtrlAffPart();
+            this.actCtrlAffPart.setStages(this.getStages());
+            this.actCtrlAffPart.setVuePart(this.getParticipantVue());
+        }
+        return actCtrlAffPart;
     }
 
     public Stages getStages() {

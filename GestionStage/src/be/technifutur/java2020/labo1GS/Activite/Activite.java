@@ -45,5 +45,7 @@ public class Activite {
         return duree;
     }
 
-
+    public HashMap<String, Participant> getParticipants() {
+        return participants;
+    }
 }
