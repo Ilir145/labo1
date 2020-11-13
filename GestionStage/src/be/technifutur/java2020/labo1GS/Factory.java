@@ -15,16 +15,16 @@ public class Factory {
     private StageCtrlEncode ctrlEncode;
     private StageCtrlModifNom ctrlModifNom;
     private StageCtrlAjouteActivite ctrlAjouteActivite;
-    private  StgCtrlAffCollAct ctrlAffCollAct;
-    private  StgCtrlAffStg ctrlAffStg;
-    private  StgCtrlAffHoraire ctrlAffHoraire;
+    private StgCtrlAffCollAct ctrlAffCollAct;
+    private StgCtrlAffStg ctrlAffStg;
+    private StgCtrlAffHoraire ctrlAffHoraire;
     private StgCtrlAffPart ctrlAffPart;
     private StageCtrlAjouteParticipants ctrlAjouteParticipants;
     private PartCtrlAffPart partCtrlAffPart;
     private MenuGeneral menuG;
     private MenuModif menuM;
     private Stages stages;
-    private  StageVue vueStage;
+    private StageVue vueStage;
     private ActiviteVue vueAct;
     private ActiviteCtrl ctrlAct;
     private Participants participants;
@@ -176,6 +176,7 @@ public class Factory {
         }
         return this.ctrlAct;
     }
+
 
     public HoraireVue getVueHoraire() {
         if(this.vueHoraire == null){

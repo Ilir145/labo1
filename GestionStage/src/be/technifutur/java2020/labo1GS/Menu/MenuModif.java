@@ -37,7 +37,7 @@ public class MenuModif {
             System.out.println("2)  Modif date de debut");
             System.out.println("3)  Modif date de fin");
             System.out.println("4)  Ajouter une activité");
-            System.out.println("5)  Ajouter un participant");
+            System.out.println("5)  Ajouter un participant a un stage");
             System.out.println("6)  Afficher les activites d un stage");
             System.out.println("7)  Revenir au menu principal");
 

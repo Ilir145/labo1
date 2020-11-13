@@ -19,12 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fa8bf48-a290-4101-9230-47416aad6a7f" name="Default Changelist" comment="Réorganisation en packages">
+    <list default="true" id="7fa8bf48-a290-4101-9230-47416aad6a7f" name="Default Changelist" comment="Encodage des participants 2.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Activite/Activite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Activite/Activite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Factory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Participant/Participant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Participant/Participant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Participant/ParticipantCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Participant/ParticipantCtrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Participant/ParticipantVue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Participant/ParticipantVue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Menu/MenuModif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Menu/MenuModif.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Stage/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Stage/Stage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Stage/StageCtrlAjouteParticipants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/Stage/StageCtrlAjouteParticipants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/User/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1GS/User/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -198,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604934854173</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Encodage des participants 2.0">
+      <created>1605000541496</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1605000541496</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,7 +235,8 @@
     <MESSAGE value="Affichage participants" />
     <MESSAGE value="Affiche liste de tous les participants" />
     <MESSAGE value="Réorganisation en packages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Réorganisation en packages" />
+    <MESSAGE value="Encodage des participants 2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Encodage des participants 2.0" />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="42" key="#com.intellij.ide.util.MemberChooser" timestamp="1604664232044">
@@ -238,38 +247,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="424" y="235" width="432" height="216" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1604934140190" />
-    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604934294404">
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605255286490">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1604934294404" />
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1605255286490" />
     <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1604934552795">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1604934552795" />
-    <state width="1237" height="210" key="GridCell.Tab.0.bottom" timestamp="1604999447380">
+    <state width="1237" height="35" key="GridCell.Tab.0.bottom" timestamp="1605008654811">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="210" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604999447380" />
-    <state width="1237" height="210" key="GridCell.Tab.0.center" timestamp="1604999447380">
+    <state width="1237" height="35" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1605008654811" />
+    <state width="1237" height="35" key="GridCell.Tab.0.center" timestamp="1605008654811">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="210" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604999447380" />
-    <state width="1237" height="210" key="GridCell.Tab.0.left" timestamp="1604999447380">
+    <state width="1237" height="35" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1605008654811" />
+    <state width="1237" height="35" key="GridCell.Tab.0.left" timestamp="1605008654810">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="210" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604999447380" />
-    <state width="1237" height="210" key="GridCell.Tab.0.right" timestamp="1604999447380">
+    <state width="1237" height="35" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1605008654810" />
+    <state width="1237" height="35" key="GridCell.Tab.0.right" timestamp="1605008654811">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="210" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604999447380" />
+    <state width="1237" height="35" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1605008654811" />
     <state x="121" y="0" key="SettingsEditor" timestamp="1604480891691">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1604480891691" />
-    <state x="207" y="138" key="Vcs.Push.Dialog.v2" timestamp="1604934866677">
+    <state x="207" y="138" key="Vcs.Push.Dialog.v2" timestamp="1605000554145">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="207" y="138" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604934866677" />
+    <state x="207" y="138" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1605000554145" />
     <state x="334" y="356" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1604478450000">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

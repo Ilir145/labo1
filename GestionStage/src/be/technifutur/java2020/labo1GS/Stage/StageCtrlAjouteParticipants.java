@@ -35,7 +35,7 @@ public class StageCtrlAjouteParticipants {
     public void  ajouteParticipant(User user){
         String nomStage = this.vueStage.saisirNom(user);
         this.ctrlPart.encodeParticipant(user);
-        this.stages.getStages().get(nomStage).ajouteParticipant(this.ctrlPart.getParticipant());
+        this.stages.getStages().get(nomStage).ajouteParticipant(this.ctrlPart.getParticipant(),user);
         this.participants.ajoutePart(this.ctrlPart.getParticipant());
     }
 }

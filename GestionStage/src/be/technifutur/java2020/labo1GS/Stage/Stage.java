@@ -2,7 +2,9 @@ package be.technifutur.java2020.labo1GS.Stage;
 
 
 import be.technifutur.java2020.labo1GS.Activite.Activite;
+import be.technifutur.java2020.labo1GS.Activite.ActiviteVue;
 import be.technifutur.java2020.labo1GS.Participant.Participant;
+import be.technifutur.java2020.labo1GS.User.User;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
@@ -11,6 +13,7 @@ public class Stage {
     private String nom;
     private LocalDateTime debut;
     private LocalDateTime fin;
+    private ActiviteVue vueAct;
     private HashMap<String, Activite> activites;
     private HashMap<String, Participant> participants;
 
@@ -20,6 +23,7 @@ public class Stage {
         this.fin = fin;
         this.activites = new HashMap<>();
         this.participants = new HashMap<>();
+        this.vueAct = new ActiviteVue();
     }
 
     public HashMap<String, Participant> getParticipants() {
@@ -36,6 +40,10 @@ public class Stage {
 
     public LocalDateTime getFin() {
         return fin;
+    }
+
+    public void setVueAct(ActiviteVue vueAct) {
+        this.vueAct = vueAct;
     }
 
     public void setNom(String nom) {
@@ -71,11 +79,22 @@ public class Stage {
         return verif;
     }
 
-    public boolean ajouteParticipant(Participant participant){
+    public boolean ajouteParticipant(Participant participant, User user){
         boolean verif = true;
-        if(!activites.containsKey(participant.getNomPrenom())) {
+        if(!participants.containsKey(participant.getNomPrenom())) {
                 this.participants.putIfAbsent(participant.getNomPrenom(), participant);
                 verif = true;
+        }
+        System.out.println("Choisissez les activités dans lesquels il sera inscrit :" );
+        for (Activite act: this.activites.values()
+             ) {
+            this.vueAct.setActivite(act);
+            this.vueAct.afficheActivite();
+            System.out.println("Voulez vous l inscrire a cette activité ? (o/n)");
+            String choix = user.getString();
+            if(choix == "o"){
+                act.ajouteParticipants(participant);
+            }
         }
         return verif;
     }

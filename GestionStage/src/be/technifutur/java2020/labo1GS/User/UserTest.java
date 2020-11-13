@@ -11,10 +11,10 @@ public class UserTest implements User {
             "4","stage1","html1","2017-12-07T08:30:00","120",
             "4","stage1","java2","2017-12-07T11:00:00","120",
             "4","stage1","sql2","2017-12-08T08:30:00","180",
-            "6","stage1","Ilir","Beqiri","ilir@gmail.com","SrgAth",
-            "6","stage1","Ab","sang","x","x",
-            "6","stage1","Al","Ias","x","Nom",
-            "6","stage1","Al","Ias","o","New@mail.be","o","NewNom",
+            "6","stage1","Ilir","Beqiri","ilir@gmail.com","SrgAth","n","n","n","o","o","o",
+            "6","stage1","Ab","sang","x","x","n","n","n","o","o","o",
+            "6","stage1","Al","Ias","x","Nom","n","n","n","o","o","o",
+            "6","stage1","Al","Ias","o","New@mail.be","o","NewNom","n","n","n","o","o","o",
             "7","8","stage1","6","stage1","7","9"};
     private int indCourant = -1;
 
